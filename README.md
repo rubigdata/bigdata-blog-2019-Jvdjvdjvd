@@ -6,14 +6,7 @@ Some useful features in markdown are:
 - bulleted lists
 - of multiple items
 
-# Headers
-
-## Subheaders
-
-**Bold** and *Italic* markup.
-
-You can use explicit links, e.g., to the [course site](https://rubigdata.github.io/).
-
-And lots more, to see what you can do with Markdown (including images, and tables) take a look at the [Cheatsheet][cheat] (an example of a very useful feature to separate actual links from their references in your text).
-
-[cheat]:        https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet   "Markdown cheatsheet"
+# Assignments
+Assignnment 1: https://github.com/rubigdata/bigdata-blog-2019-Jvdjvdjvd/blob/master/Assignment1.md
+Assignemnt 2: https://github.com/rubigdata/bigdata-blog-2019-Jvdjvdjvd/blob/master/assignment2.md
+#
