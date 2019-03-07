@@ -1,4 +1,4 @@
-# Sample blog 
+# [My Blog](https://rubigdata.github.io/bigdata-blog-2019-Jvdjvdjvd/)
 Hello dear reader. Here yo will find my work for the Big Data Course
 
 # Assignments
