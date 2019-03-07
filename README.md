@@ -7,6 +7,7 @@ Some useful features in markdown are:
 - of multiple items
 
 # Assignments
-Assignnment 1: https://github.com/rubigdata/bigdata-blog-2019-Jvdjvdjvd/blob/master/Assignment1.md
-Assignemnt 2: https://github.com/rubigdata/bigdata-blog-2019-Jvdjvdjvd/blob/master/assignment2.md
-#
+[Assignment 1](https://github.com/rubigdata/bigdata-blog-2019-Jvdjvdjvd/blob/master/Assignment1.md) 
+
+[Assignment 2](https://github.com/rubigdata/bigdata-blog-2019-Jvdjvdjvd/blob/master/assignment2.md)
+
