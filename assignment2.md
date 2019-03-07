@@ -1,4 +1,5 @@
 Hello dear reader, this is my blog post for Assignemnt 2 - hello hadoop.
+more info on the files can be found on: https://github.com/rubigdata/hello-hadoop-2019-Jvdjvdjvd
 
 # Getting started
 ## Getting the Hadoop Docker
