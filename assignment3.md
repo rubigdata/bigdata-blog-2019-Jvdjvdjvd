@@ -9,8 +9,8 @@ Here the 9000:9000 signifies which hosts to send and accept data from, as is als
 
 # Scala
 Scala has some things that took getting use to. For example the ```_``` symbol can have many meanings. In case of lamda-expressions, it can be used as a sort of shorthand notation in a lambda expression. For example, ```.filter(x -> x != n) ``` can be shortened to ```.filter(_ != n)``` Another example: ```val wc = words.reduceByKey(_+_)``` is the same as
-```val wc = words.reduceByKey((a,b) => a+ b)```.
-Another use is to signify the nth element of a variable. For example ```x_2``` means the second element of x.
+```val wc = words.reduceByKey((a,b) => a + b)```.
+Another use is to signify the nth element of a variable. For example ```x._2``` means the second element of x.
 
 
 # spark
