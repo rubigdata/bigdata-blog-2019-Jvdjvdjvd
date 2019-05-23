@@ -26,7 +26,7 @@ A second attempt yielded more success, ```val cleanXDF = fullDF.filter($"X_COORD
 
 Another problem, which I was not able to fix, was to nicelty loop through each column to check for NaN values. I attempted to get the names of columns with ```df.columns```, which worked. However, it was not simply possible to loop though them using ```println(addrDF.filter( $VAR.isNull ).count)``` wth a variable VAR, for the $ would not recognise the string. In the end it was done by hand, but in the future I would like to find a solution for this.
 
-A notable difference between the dataframes and the regular spark is that with the dataframes, execution was more prevalent. Normally only lazy evaluation takes place until an actual action is required. For the dataframes it seems this is a bit different in nature, although it may be because actions are more prevalent. It seems however, although this is a bit speculative, that operations are ran before anything like 'Show()' is used.
+A final note is the relation between the dataframe and the RDD in general. It seems that the dataframe can be seen as a layer on top of the RDD (though this is not technically correct). A df.show() command will cause the RDD to execute each parition and collect its results, which can then be transformed/fed into a dataframe. This arrchitecture allows for the dataframe to be very compatible with the RDD while also allowing some good overview. In practise, it is likely that the dataframe (indirectly) tells the parition what to do in order to get nice compatibility with a dataframe format.
 
 # end
 All in all, I found the experience in Spark and the getting to know Scala helpfull. Although I find that it remains difficult, it was nice to get to know some basics.
