@@ -2,7 +2,7 @@
 This is the blog for the final assignment of the Big Data Course. I worked on the commoncrawl data of the rubigdata course on github.
 
 # Getting started
-## create docker
+## Create docker
 The first step of all was to follow the tutorial links provided on the assignment. In these tutorials files and commands were given to start the spark cluster:
 ```
 docker network create spark-net
@@ -13,7 +13,7 @@ docker create --name spark-worker-2 --network spark-net -p 8082:8081 --link spar
 wget http://rubigdata.github.io/course/background/rubigdata.tgz
 tar xzvfp rubigdata.tgz
 ```
-## get wanted file
+## Get wanted file
 To start the docker containers, I just ran ```docker start spark-master spark-worker-1 spark-worker-2``` 
 Once everthing was running smoothly I decided to work on the webcrawl data. To do so, it had to be taken from the docker with the WARC tutorial. 
 ```
@@ -26,11 +26,11 @@ done
 ```
 Having these files, I coudl get going.
 
-## altering the scala file
+## Altering the scala file
 The first thing I discovered is that altering the scala file in the extracted rubigdatafolder does not automatically change the spark applicationl. After each alteration it was required to rebuild the spark app by ```docker build --rm=true -t rubigdata/spark-app .```. It could then be executed (if no errors occured) by ```docker run --rm --name RUBigDataApp -e ENABLE_INIT_DAEMON=false --network spark-net rubigdata/spark-app```.
 
 # Doing some Spark
-## getting the output to a textfile
+## Getting the output to a textfile
 The first thing that I tried was getting the results saved into a text file rather than printing them. This however did not prove to be easy. I tried some things, but whenever I made a new text file I could not find it locally. The best attempt was:
 ```
 import org.apache.spark.sql.SparkSession
