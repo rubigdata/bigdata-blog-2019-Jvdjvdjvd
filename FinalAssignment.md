@@ -91,7 +91,7 @@ In this project I only used the html data. It would also have been interesting t
 
 
 # Code
-For a (personal) log of activiy, see this [link](dummy).
+For a (personal) log of activiy, see this [link](https://github.com/rubigdata/cc-2019-Jvdjvdjvd/blob/master/logFinalProject.md).
 The code is pasted below.
 
 ## Build.cbt
@@ -119,8 +119,8 @@ libraryDependencies ++= Seq(
 libraryDependencies += "com.github.sara-nl" % "warcutils" % "-SNAPSHOT"	
 ```
 
-## running the scala
-### general body
+## Running Spark in scala
+### General body
 Part of the code per experiment was the same. Here I pasted the parts that were always the same
 ```
 package org.rubigdata
@@ -220,7 +220,7 @@ val Acounts = warcc.
 
 ```
 
-## getting total word count per link
+## Getting total word count per link
 ```
 val wordCount = warcc.
      filter(w => !(w._2.contains("301 Moved Permanently"))).
@@ -236,7 +236,7 @@ val wordCount = warcc.
 
 ```
 
-## getting percentage of occurence of a word
+## Getting percentage of occurence of a word
 ```
 val word1 = "spark".toLowerCase
 val word2 = "RDDs".toLowerCase
@@ -260,7 +260,7 @@ val percentage  = ((wordSum._1 / totalWords *100) , (wordSum._2 / totalWords *10
 println("There were %d words in total. %f percent were '%s' and %f percent were '%s'.".format(totalWords, percentage._1, word1, percentage._2, word2))
 ```
 
-## getting word1 given word2
+## Getting word1 given word2
 ```
 al word1 = "spark".toLowerCase
 val word2 = "RDDs".toLowerCase
