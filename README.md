@@ -11,5 +11,5 @@ In this assignment I learned to use hadoop.
 ##  [Assignment 3 ](https://github.com/rubigdata/bigdata-blog-2019-Jvdjvdjvd/blob/master/assignment3.md)
 In this assignment I started with Spark
 
-## [Final Assignment](https://github.com/rubigdata/cc-2019-Jvdjvdjvd/blob/master/README.md)
+## [Final Assignment](https://github.com/rubigdata/cc-2019-Jvdjvdjvd)
 Here I used data from a webcrawl
